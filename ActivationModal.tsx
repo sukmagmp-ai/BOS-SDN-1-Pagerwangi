@@ -72,7 +72,7 @@ export function ActivationModal({
   const handleAdminLogin = (e: React.FormEvent) => {
     e.preventDefault();
     // Master Admin PIN for app developer
-    if (adminPin.trim() === '2703' || adminPin.trim() === '270326' || adminPin.trim() === 'TIZENITY') {
+    if (adminPin.trim() === '2703' || adminPin.trim() === '123456' || adminPin.trim() === 'ADMIN') {
       setIsAdminAuthenticated(true);
       setTargetMachineId(machineId);
       setGeneratedSerial(generateSerialNumber(machineId));
